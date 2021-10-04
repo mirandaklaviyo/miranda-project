@@ -1,0 +1,113 @@
+* {
+    background-color: #Fffbef;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(141, 139, 137)
+}
+
+h1 {
+    text-align: center;
+    color: rgb(106, 81, 59)
+}
+
+h3{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(106, 81, 59)
+}
+
+header {
+    margin-top: 50px;
+    height: 15%;
+    /* border: 2px solid green; */
+    text-align: center;
+    color: rgb(106, 81, 59);
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.container {
+    height: 20%;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+.container div{
+    /* border: 2px solid dodgerblue; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 18vh;
+    background-position: center;
+}
+
+.cursor {
+    cursor: url(./Images/Cursor.png);
+}
+
+.OneImage1{
+    background-image: url(./Images/OneImage1.png);
+    background-size: cover;
+}
+
+.OneImage2{
+    background-image: url(./Images/OneImage2.jpg);
+    background-size: cover;
+}
+
+.OneImage3{
+    background-image: url(./Images/OneImage3.jpeg);
+    background-size: cover;
+}
+
+.OneImage4{
+    background-image: url(./Images/OneImage4.jpeg);
+    background-size: cover;
+}
+
+.TwoImage1{
+    background-color: rgb(179, 179, 179);
+    background-size: cover;
+}
+
+.TwoImage2{
+    background-color: rgb(255, 223, 193);
+    background-size: cover;
+}
+
+.TwoImage3{
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.TwoImage4{
+    background-color: rgb(114, 13, 13);
+    background-size: cover;
+}
+
+.ThreeImage1{
+    background-image: url(./Images/ThreeImage1.jpeg);
+    background-size: cover;
+}
+
+.ThreeImage2{
+    background-image: url(./Images/ThreeImage4.png);
+    background-size: cover;
+}
+
+.ThreeImage3{
+    background-image: url(./Images/ThreeImage3.jpeg);
+    background-size: cover;
+}
+
+.ThreeImage4{
+    background-image: url(./Images/ThreeImage2.jpeg);
+    background-size: cover;
+}
