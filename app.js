@@ -32,12 +32,12 @@ resultsbutton.addEventListener('click', () => {
     resultsbutton.style.display = 'none'
 
     console.log(newscore)
-    if(newscore <= 3) {
-        let div = document.createElement('div')
-        div.classList.add('resultstyle')
-        header.appendChild(div)
-        div.innerText("Hello")
-    }
+    // if(newscore <= 3) {
+    //     let div = document.createElement('div')
+    //     div.classList.add('resultstyle')
+    //     header.appendChild(div)
+    //     div.innerText("Hello")
+    // }
 
 })
 
