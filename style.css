@@ -177,7 +177,7 @@ header {
 }
 
 @media screen 
-    and (min-width: 1000px)
+    and (min-width: 950px)
     and (max-width: 1500px) {
     .container div{
         border: 2px solid rgb(63, 63, 63);
