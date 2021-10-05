@@ -17,39 +17,78 @@ h3{
 }
 
 header {
-    margin-top: 50px;
     height: 15%;
     /* border: 2px solid green; */
     text-align: center;
     color: rgb(106, 81, 59);
-    margin-left: 5vw;
-    margin-right: 5vw;
+    padding: 30px 20px 10px 20px;
+}
 
+.button{
+    margin-top: 30px;
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outercontainer {
+    /* border: 2px solid magenta; */
+    align-items: center;
+}
+
+
+
+.hidden{
+    display: none;
 }
 
 .container {
-    height: 20%;
+    height: 50%;
     /* border: 2px solid greenyellow; */
     display: flex;
     justify-content: space-between;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 5vw;
+    align-items: center;
 }
 
 .container div{
-    /* border: 2px solid dodgerblue; */
-    flex-basis: 20%;
-    display: flex;
+    border: 2px solid rgb(63, 63, 63);
+    /* flex-basis: 20%; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: white;
-    height: 18vh;
+    /* height: 18vh; */
     background-position: center;
+    width: 100px;
+    height: 100px;
 }
 
 .cursor {
     cursor: url(./Images/Cursor.png);
+}
+.getresults{
+    /* border: 2px solid magenta; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    height: 40px;
+    width: 200px;
+}
+
+.restartbutton{
+    /* border: 2px solid magenta; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    height: 40px;
+    width: 200px;
 }
 
 .OneImage1{
@@ -110,4 +149,28 @@ header {
 .ThreeImage4{
     background-image: url(./Images/ThreeImage2.jpeg);
     background-size: cover;
+}
+
+.clicknot1 {
+    pointer-events: none;
+}
+.clicknot {
+    pointer-events: none;
+    opacity: 0.4;
+    transition: .25s;
+}
+
+@media screen and (min-width: 970px) {
+    .container div{
+        border: 2px solid rgb(63, 63, 63);
+        /* flex-basis: 20%; */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        color: white;
+        /* height: 18vh; */
+        background-position: center;
+        width: 200px;
+        height: 200px;
+    }
 }
