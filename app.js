@@ -42,14 +42,15 @@ resultsbutton.addEventListener('click', () => {
 })
 
 
-restartbutton.addEventListener('click', _addClasses) 
-    function _addClasses() {
-        for (var i = 0; i < els.length; i++) {
-          els[i].classList.add('hidden')
-        }
-}
+// restartbutton.addEventListener('click', _addClasses) 
+//     function _addClasses() {
+//         for (var i = 0; i < els.length; i++) {
+//           els[i].classList.add('hidden')
+//         }
+// }
 
 restartbutton.addEventListener('click', () => {
+    window.location.reload()
     button.style.display = 'block'
     restartbutton.style.display = 'none'
     resultsbutton.style.display = 'none'
@@ -80,8 +81,8 @@ OneImage1.addEventListener('click', () => {
     console.log(newscore)
 })
 
-OneImage1.addEventListener('click', _addClasses2) 
-    function _addClasses2() {
+OneImage1.addEventListener('click', _addClasses11) 
+    function _addClasses11() {
         OneImage1.classList.add('clicknot1')
         OneImage2.classList.add('clicknot')
         OneImage3.classList.add('clicknot')
@@ -95,6 +96,15 @@ OneImage2.addEventListener('click', () => {
     console.log(newscore)
 })
 
+OneImage2.addEventListener('click', _addClasses12) 
+    function _addClasses12() {
+        OneImage1.classList.add('clicknot')
+        OneImage2.classList.add('clicknot1')
+        OneImage3.classList.add('clicknot')
+        OneImage4.classList.add('clicknot')
+
+}
+
 
 
 OneImage3.addEventListener('click', () => {
@@ -102,48 +112,140 @@ OneImage3.addEventListener('click', () => {
     console.log(newscore)
 })
 
+OneImage3.addEventListener('click', _addClasses13) 
+    function _addClasses13() {
+        OneImage1.classList.add('clicknot')
+        OneImage2.classList.add('clicknot')
+        OneImage3.classList.add('clicknot1')
+        OneImage4.classList.add('clicknot')
+
+}
+
+
 OneImage4.addEventListener('click', () => {
     newscore = score += 4
     console.log(newscore)
 })
+
+OneImage4.addEventListener('click', _addClasses14) 
+    function _addClasses14() {
+        OneImage1.classList.add('clicknot')
+        OneImage2.classList.add('clicknot')
+        OneImage3.classList.add('clicknot')
+        OneImage4.classList.add('clicknot1')
+
+}
+
 
 TwoImage1.addEventListener('click', () => {
     newscore = score += 2
     console.log(newscore)
 })
 
+TwoImage1.addEventListener('click', _addClasses21) 
+    function _addClasses21() {
+        TwoImage1.classList.add('clicknot1')
+        TwoImage2.classList.add('clicknot')
+        TwoImage3.classList.add('clicknot')
+        TwoImage4.classList.add('clicknot')
+
+}
+
+
 TwoImage2.addEventListener('click', () => {
     newscore = score += 3
     console.log(newscore)
 })
+
+TwoImage2.addEventListener('click', _addClasses22) 
+    function _addClasses22() {
+        TwoImage1.classList.add('clicknot')
+        TwoImage2.classList.add('clicknot1')
+        TwoImage3.classList.add('clicknot')
+        TwoImage4.classList.add('clicknot')
+
+}
 
 TwoImage3.addEventListener('click', () => {
     newscore = score += 1
     console.log(newscore)
 })
 
+TwoImage3.addEventListener('click', _addClasses23) 
+    function _addClasses23() {
+        TwoImage1.classList.add('clicknot')
+        TwoImage2.classList.add('clicknot')
+        TwoImage3.classList.add('clicknot1')
+        TwoImage4.classList.add('clicknot')
+
+}
+
 TwoImage4.addEventListener('click', () => {
     newscore = score += 4
     console.log(newscore)
 })
+
+TwoImage4.addEventListener('click', _addClasses24) 
+    function _addClasses24() {
+        TwoImage1.classList.add('clicknot')
+        TwoImage2.classList.add('clicknot')
+        TwoImage3.classList.add('clicknot')
+        TwoImage4.classList.add('clicknot1')
+
+}
 
 ThreeImage1.addEventListener('click', () => {
     newscore = score += 1
     console.log(newscore)
 })
 
+ThreeImage1.addEventListener('click', _addClasses31) 
+    function _addClasses31() {
+        ThreeImage1.classList.add('clicknot1')
+        ThreeImage2.classList.add('clicknot')
+        ThreeImage3.classList.add('clicknot')
+        ThreeImage4.classList.add('clicknot')
+
+}
+
 ThreeImage2.addEventListener('click', () => {
     newscore = score += 4
     console.log(newscore)
 })
+
+ThreeImage2.addEventListener('click', _addClasses32) 
+    function _addClasses32() {
+        ThreeImage1.classList.add('clicknot')
+        ThreeImage2.classList.add('clicknot1')
+        ThreeImage3.classList.add('clicknot')
+        ThreeImage4.classList.add('clicknot')
+
+}
 
 ThreeImage3.addEventListener('click', () => {
     newscore = score += 2
     console.log(newscore)
 })
 
+ThreeImage3.addEventListener('click', _addClasses33) 
+    function _addClasses33() {
+        ThreeImage1.classList.add('clicknot')
+        ThreeImage2.classList.add('clicknot')
+        ThreeImage3.classList.add('clicknot1')
+        ThreeImage4.classList.add('clicknot')
+
+}
+
 ThreeImage4.addEventListener('click', () => {
     newscore = score += 3
     console.log(newscore)
 })
 
+ThreeImage4.addEventListener('click', _addClasses34) 
+    function _addClasses34() {
+        ThreeImage1.classList.add('clicknot')
+        ThreeImage2.classList.add('clicknot')
+        ThreeImage3.classList.add('clicknot')
+        ThreeImage4.classList.add('clicknot1')
+
+}
