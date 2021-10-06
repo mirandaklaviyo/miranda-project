@@ -65,7 +65,7 @@ resultsbutton.addEventListener('click', () => {
             resultscontent.innerText = "When choosing a coffee shop, you prefer a clean aesthetic over character. You rarely stay at the coffee shop too long. Instead, you just like to get your drink, finish it promptly, and go on with your day so other patrons can sit in one of the few seats available.";
         } else if (newscore <= 9) {
             resultsheader.innerText = "You like warm and cozy vibes!";
-            resultscontent.innerText = "Your prefered coffee shop boasts greenery, candles, and lots of places to sit. Here you may stay for hours sipping a hot tea while reading a book or working on a laptop. The staff know you by name, as this is your new WFH spot. The pastries are divine, so you'll have breakfast, lunch, and dinner all in one place.";
+            resultscontent.innerText = "Your preferred coffee shop boasts greenery, candles, and lots of places to sit. Here you may stay for hours sipping a hot tea while reading a book or working on a laptop. The staff know you by name, as this is your new WFH spot. The pastries are divine, so you'll have breakfast, lunch, and dinner all in one place.";
         } else {
             resultsheader.innerText = "You like funky spots!";
             resultscontent.innerText = "Going to a coffee shop is about fun for you. The music is loud, the vibes are good, the people are friendly. This type of coffee shop is not for doing work or reading. Here you'll find fancy drinks, fun flavors, and more!";
