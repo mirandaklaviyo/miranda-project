@@ -161,6 +161,12 @@ header {
     transition: .25s;
 }
 
+.resultscontent{
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 30px;
+}
+
 @media screen and (min-width: 1500px) {
     .container div{
         border: 2px solid rgb(63, 63, 63);

@@ -1,62 +1,17 @@
 const button = document.querySelector(".button")
 
 var els = document.querySelectorAll('.hidden')
+// var imagesone = document.querySelectorAll('.clicknot1')
+// var images = document.querySelectorAll('.clicknot')
+
 
 const restartbutton = document.querySelector(".restartbutton")
 const resultsbutton = document.querySelector(".getresults")
 
-
-restartbutton.style.display = 'none'
-resultsbutton.style.display = 'none'
-
-button.addEventListener('click', _removeClasses)
-function _removeClasses() {
-  for (var i = 0; i < els.length; i++) {
-    els[i].classList.remove('hidden')
-  }
-  resultsbutton.style.display = 'block'
-  restartbutton.style.display = 'none'
-  button.style.display = 'none'
-}
-
-
-resultsbutton.addEventListener('click', _addClasses) 
-    function _addClasses() {
-        for (var i = 0; i < els.length; i++) {
-          els[i].classList.add('hidden')
-        }
-}
-
-resultsbutton.addEventListener('click', () => {
-    restartbutton.style.display = 'block'
-    resultsbutton.style.display = 'none'
-
-    console.log(newscore)
-    // if(newscore <= 3) {
-    //     let div = document.createElement('div')
-    //     div.classList.add('resultstyle')
-    //     header.appendChild(div)
-    //     div.innerText("Hello")
-    // }
-
-})
-
-
-// restartbutton.addEventListener('click', _addClasses) 
-//     function _addClasses() {
-//         for (var i = 0; i < els.length; i++) {
-//           els[i].classList.add('hidden')
-//         }
-// }
-
-restartbutton.addEventListener('click', () => {
-    window.location.reload()
-    button.style.display = 'block'
-    restartbutton.style.display = 'none'
-    resultsbutton.style.display = 'none'
-})
-
-
+const resultsheader = document.querySelector(".resultsheader")
+const resultscontent = document.querySelector(".resultscontent")
+const quizheader = document.querySelector(".quizheader")
+const quizheadercontent = document.querySelector(".quizheadercontent")
 
 let score = 0
 let newscore = 0
@@ -76,6 +31,123 @@ const ThreeImage2 = document.querySelector(".ThreeImage2")
 const ThreeImage3 = document.querySelector(".ThreeImage3")
 const ThreeImage4 = document.querySelector(".ThreeImage4")
 
+
+restartbutton.style.display = 'none'
+resultsbutton.style.display = 'none'
+
+button.addEventListener('click', _removeClasses)
+function _removeClasses() {
+  for (var i = 0; i < els.length; i++) {
+    els[i].classList.remove('hidden')
+  }
+  resultsbutton.style.display = 'block'
+  restartbutton.style.display = 'none'
+  button.style.display = 'none'
+}
+
+resultsbutton.addEventListener('click', () => {
+        for (var i = 0; i < els.length; i++) {
+          els[i].classList.add('hidden')
+        }
+        restartbutton.style.display = 'block'
+        resultsbutton.style.display = 'none'
+
+        console.log(newscore)
+        
+        quizheadercontent.innerText = ""
+        quizheader.innerText = ""
+
+        if(newscore <= 3) {
+            resultsheader.innerText = "You like dark and stormy!";
+            resultscontent.innerText = "When choosing a coffee shop, you prefer the dark toned decor, warm atmosphere, and quiet indulgence. You look for the soft leather couch and adjacent tree stump coffee table to set your latte down on. You value a good pastry selection and light music. You may be visiting alone, but the baristas are there to keep you company.";
+        } else if (newscore <= 6) {
+            resultsheader.innerText = "You like clean lines and minimal design!";
+            resultscontent.innerText = "When choosing a coffee shop, you prefer a clean aesthetic over character. You rarely stay at the coffee shop too long. Instead, you just like to get your drink, finish it promptly, and go on with your day so other patrons can sit in one of the few seats available.";
+        } else if (newscore <= 9) {
+            resultsheader.innerText = "You like warm and cozy vibes!";
+            resultscontent.innerText = "Your prefered coffee shop boasts greenery, candles, and lots of places to sit. Here you may stay for hours sipping a hot tea while reading a book or working on a laptop. The staff know you by name, as this is your new WFH spot. The pastries are divine, so you'll have breakfast, lunch, and dinner all in one place.";
+        } else {
+            resultsheader.innerText = "You like funky spots!";
+            resultscontent.innerText = "Hello 4";
+        }
+})
+
+restartbutton.addEventListener('click', () => {
+    // window.location.reload()
+    // button.style.display = 'block'
+    // restartbutton.style.display = 'none'
+    // resultsbutton.style.display = 'none'
+    _removeClasses()
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList.remove('clicknot1')
+      }
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList.remove('clicknot')
+      }
+    // for (var i = 0; i < imagesone.length; i++) {
+    //     imagesone[i].classList.remove('clicknot1')
+    //   }
+    // for (var i = 0; i < images.length; i++) {
+    //     images[i].classList.remove('clicknot')
+    //   }  
+    score = 0
+    newscore = 0
+    resultsheader.innerText = ""
+    resultscontent.innerText = ""
+    quizheader.innerText = "What kind of coffee shop are you?"
+    quizheadercontent.innerText = "Take the quiz to see what kind of coffee shop YOU are!"
+})
+
+
+
+
+// resultsbutton.addEventListener('click', () => {
+//     restartbutton.style.display = 'block'
+//     resultsbutton.style.display = 'none'
+
+//     console.log(newscore)
+//     // if(newscore <= 3) {
+//     //     let div = document.createElement('div')
+//     //     div.classList.add('resultstyle')
+//     //     header.appendChild(div)
+//     //     div.innerText("Hello")
+//     // }
+
+// })
+
+
+// resultsbutton.addEventListener('click', _addClasses) 
+//     function _addClasses() {
+//         for (var i = 0; i < els.length; i++) {
+//           els[i].classList.add('hidden')
+//         }
+// }
+
+// resultsbutton.addEventListener('click', () => {
+//     restartbutton.style.display = 'block'
+//     resultsbutton.style.display = 'none'
+
+//     console.log(newscore)
+//     // if(newscore <= 3) {
+//     //     let div = document.createElement('div')
+    //     div.classList.add('resultstyle')
+    //     header.appendChild(div)
+    //     div.innerText("Hello")
+    // }
+
+// })
+
+
+// restartbutton.addEventListener('click', _addClasses) 
+//     function _addClasses() {
+//         for (var i = 0; i < els.length; i++) {
+//           els[i].classList.add('hidden')
+//         }
+// }
+
+
+
+
 OneImage1.addEventListener('click', () => {
     newscore = score += 1
     console.log(newscore)
@@ -89,7 +161,6 @@ OneImage1.addEventListener('click', _addClasses11)
         OneImage4.classList.add('clicknot')
 
 }
-
 
 OneImage2.addEventListener('click', () => {
     newscore = score += 2
