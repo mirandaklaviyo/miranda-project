@@ -68,7 +68,7 @@ resultsbutton.addEventListener('click', () => {
             resultscontent.innerText = "Your prefered coffee shop boasts greenery, candles, and lots of places to sit. Here you may stay for hours sipping a hot tea while reading a book or working on a laptop. The staff know you by name, as this is your new WFH spot. The pastries are divine, so you'll have breakfast, lunch, and dinner all in one place.";
         } else {
             resultsheader.innerText = "You like funky spots!";
-            resultscontent.innerText = "Hello 4";
+            resultscontent.innerText = "Going to a coffee shop is about fun for you. The music is loud, the vibes are good, the people are friendly. This type of coffee shop is not for doing work or reading. Here you'll find fancy drinks, fun flavors, and more!";
         }
 })
 
